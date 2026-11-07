@@ -14,11 +14,11 @@ This is the full procedure. `README.md` is the 30-second version; this file is t
 ## 1) Clone
 
 ```bash
-git clone https://github.com/<you>/omp500.git
+git clone https://github.com/jeremmi21/omp500.git
 cd omp500
 ```
 
-Replace `<you>` with your GitHub username. Branch is `main`.
+Repo: https://github.com/jeremmi21/omp500 — branch `main`. Branch is `main`.
 
 If the repo is private, Git will prompt for auth (or use `gh auth login`).
 
@@ -74,7 +74,7 @@ If any check is `FAIL`, it names the file or skill. Fix it, re-run `verify.sh`.
 
 Give a fresh agent this prompt (also in `README.md` under Agent bootstrap contract):
 
-> Clone `https://github.com/<you>/omp500` on `main`, read `README.md` + `INSTALL.md`, copy `settings/secrets.example.env` → `.env` and prompt for values, run `scripts/install.sh`, load `skills/registry.json` (48 entries) and each `skills/<name>/manifest.yaml` + `prompt.md`, check count and folder/name match, run `scripts/verify.sh`, report install status + skill count by category + BAML health + version/commit.
+> Clone `https://github.com/jeremmi21/omp500` on `main`, read `README.md` + `INSTALL.md`, copy `settings/secrets.example.env` → `.env` and prompt for values, run `scripts/install.sh`, load `skills/registry.json` (48 entries) and each `skills/<name>/manifest.yaml` + `prompt.md`, check count and folder/name match, run `scripts/verify.sh`, report install status + skill count by category + BAML health + version/commit.
 
 The agent treats the repo as source of truth — if this prompt and the repo disagree, it follows the repo and notes the conflict.
 

@@ -7,7 +7,7 @@ One repo to recreate your OMP on any device. Clone, run one script, and both you
 ## Human quickstart (UX — 2 minutes)
 
 ```bash
-git clone https://github.com/<you>/omp500.git
+git clone https://github.com/jeremmi21/omp500.git
 cd omp500
 cp settings/secrets.example.env .env   # fill in keys when asked, never commit .env
 bash scripts/install.sh                # installs deps + BAML client + registers skills
@@ -60,9 +60,9 @@ If this README and the repo disagree, the repo wins. `INSTALL.md` is the full st
 
 ## Agent bootstrap contract (AX — copy-paste for a fresh agent)
 
-> You are installing OMP500 from GitHub. The repo at `https://github.com/<you>/omp500` (branch `main`) is source of truth.
+> You are installing OMP500 from GitHub. The repo at `https://github.com/jeremmi21/omp500` (branch `main`) is source of truth.
 
-1. `git clone https://github.com/<you>/omp500.git && cd omp500`
+1. `git clone https://github.com/jeremmi21/omp500.git && cd omp500`
 2. Read `README.md` and `INSTALL.md` fully before acting.
 3. `cp settings/secrets.example.env .env` — if `.env` is missing, prompt the human for values; never invent secrets, never commit `.env`.
 4. `bash scripts/install.sh` — installs dependencies, BAML client, validates `settings/config.yaml`, registers every skill in `skills/registry.json`.
