@@ -1,0 +1,10 @@
+name: cut-the-curve
+description: "cut-the-curve — source heygen-com/hyperframes/.claude/skills/cut-the-curve/SKILL.md"
+category: hyperframes/media
+triggers: ["cut-the-curve"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/cut-the-curve/prompt.md
+version: 1.0.0

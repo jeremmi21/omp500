@@ -1,0 +1,10 @@
+name: makeuicute
+description: "Make a local web UI show up properly, then make it effortless to get back to. A browser refuses cross-origin font, stylesheet and ES module loads over file://, so a UI opened by double-clicking its .html renders with the"
+category: ui
+triggers: ["makeuicute"]
+inputs: ["local UI path"]
+outputs: ["served UI + serve.bat"]
+dependencies: []
+model: inherit
+prompt_file: skills/makeuicute/prompt.md
+version: 1.0.0

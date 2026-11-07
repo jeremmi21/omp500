@@ -1,0 +1,10 @@
+name: ui-demo
+description: "Record polished UI demo videos using Playwright. Use when the user asks to create a demo, walkthrough, screen recording, or tutorial video of a web application. Produces WebM videos with visible cursor, natural pacing, a"
+category: dev-tool
+triggers: ["ui-demo"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/ui-demo/prompt.md
+version: 1.0.0

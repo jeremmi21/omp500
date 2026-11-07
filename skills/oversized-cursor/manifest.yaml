@@ -1,0 +1,10 @@
+name: oversized-cursor
+description: "oversized-cursor — source heygen-com/hyperframes/.claude/skills/oversized-cursor/SKILL.md"
+category: hyperframes/media
+triggers: ["oversized-cursor"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/oversized-cursor/prompt.md
+version: 1.0.0

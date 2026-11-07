@@ -1,0 +1,10 @@
+name: motion-graphics
+description: "A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit, logo sting / brand lockup, lower-third / callout / social overlay, animated map (highlight regions, "
+category: hyperframes/media
+triggers: ["motion-graphics"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/motion-graphics/prompt.md
+version: 1.0.0

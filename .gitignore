@@ -1,0 +1,21 @@
+# secrets — never commit real keys
+.env
+settings/.env
+*.env.local
+
+# local baml output / caches
+__pycache__/
+*.pyc
+baml_client/
+.venv/
+node_modules/
+dist/
+build/
+
+# logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

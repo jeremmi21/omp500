@@ -1,0 +1,10 @@
+name: captions-overlay
+description: "captions-overlay — source heygen-com/hyperframes/.claude/skills/captions-overlay/SKILL.md"
+category: hyperframes/media
+triggers: ["captions-overlay"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/captions-overlay/prompt.md
+version: 1.0.0

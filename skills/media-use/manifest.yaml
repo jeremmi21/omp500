@@ -1,0 +1,10 @@
+name: media-use
+description: "Agent Media OS, the single skill for every media need in a HyperFrames project. Resolve BGM, SFX, image, icon, brand logo, voice, color grade, or LUT into a frozen local file or paste-ready block + ledger record (one ver"
+category: hyperframes/media
+triggers: ["media-use"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/media-use/prompt.md
+version: 1.0.0

@@ -1,0 +1,10 @@
+name: wq-alpha-research
+description: "Use for WorldQuant BRAIN alpha research: designing WQ Alpha expressions, selecting fields/operators, diagnosing simulation and IS check failures, tuning Sharpe/Fitness/Turnover, submitting alphas, and building low-correl"
+category: quant
+triggers: ["wq-alpha-research"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/wq-alpha-research/prompt.md
+version: 1.0.0

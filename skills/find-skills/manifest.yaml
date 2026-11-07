@@ -1,0 +1,10 @@
+name: find-skills
+description: "find-skills — source vercel-labs/skills/skills/find-skills/SKILL.md"
+category: dev-tool
+triggers: ["find-skills"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/find-skills/prompt.md
+version: 1.0.0

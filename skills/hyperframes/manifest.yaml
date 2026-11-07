@@ -1,0 +1,10 @@
+name: hyperframes
+description: "Mandatory entry point: read this first for any request to make, create, edit, animate, or render a video, animation, or motion graphic, including a promo, explainer, captioned clip, title card, overlay, slideshow or inte"
+category: hyperframes/media
+triggers: ["hyperframes"]
+inputs: ["brief or URL"]
+outputs: ["HyperFrames video"]
+dependencies: []
+model: inherit
+prompt_file: skills/hyperframes/prompt.md
+version: 1.0.0

@@ -1,0 +1,10 @@
+name: faceless-explainer
+description: "faceless-explainer — source heygen-com/hyperframes/skills/faceless-explainer/SKILL.md"
+category: hyperframes/media
+triggers: ["faceless-explainer"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/faceless-explainer/prompt.md
+version: 1.0.0

@@ -1,0 +1,10 @@
+name: hyperframes-creative
+description: "Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / styl"
+category: hyperframes/media
+triggers: ["hyperframes-creative"]
+inputs: ["brief or URL"]
+outputs: ["HyperFrames video"]
+dependencies: []
+model: inherit
+prompt_file: skills/hyperframes-creative/prompt.md
+version: 1.0.0

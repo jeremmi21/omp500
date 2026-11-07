@@ -1,0 +1,10 @@
+name: slideshow
+description: "slideshow — source heygen-com/hyperframes/skills/slideshow/SKILL.md"
+category: hyperframes/media
+triggers: ["slideshow"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/slideshow/prompt.md
+version: 1.0.0

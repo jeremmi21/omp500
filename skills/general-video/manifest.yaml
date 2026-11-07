@@ -1,0 +1,10 @@
+name: general-video
+description: "general-video — source heygen-com/hyperframes/skills/general-video/SKILL.md"
+category: hyperframes/media
+triggers: ["general-video"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/general-video/prompt.md
+version: 1.0.0

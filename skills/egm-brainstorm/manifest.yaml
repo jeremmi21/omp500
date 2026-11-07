@@ -1,0 +1,10 @@
+name: egm-brainstorm
+description: "EGM Brainstorm: turn a half-baked feature idea into concepts_brief.md through open-ended clarifying questions and a 6-lens Goldfish review swarm. Use when asked to brainstorm, stress-test, or scope a concept before writi"
+category: egm
+triggers: ["egm-brainstorm", "EGM", "design"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/egm-brainstorm/prompt.md
+version: 1.0.0

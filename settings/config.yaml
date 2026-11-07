@@ -1,0 +1,25 @@
+# OMP500 config — model routing, paths, and the expected skill count
+# DX: bump expected_skill_count when you add skills, keep it in sync with registry.json
+
+version: "500.1.0"
+# AX: agent checks len(registry.json) == expected_skill_count on bootstrap
+expected_skill_count: 48
+
+env:
+  # path to .env with real keys (gitignored) — see secrets.example.env
+  env_file: ".env"
+  # where local skills are registered on this device
+  skills_dir: "~/.agents/skills"
+  baml_src_dir: "baml"
+
+model_routing:
+  default_client: "Default"
+  fallback_clients: ["Fallback"]
+  # per-skill overrides go here if needed:
+  # overrides:
+  #   anatomy: "VisionClient"
+
+paths:
+  registry: "skills/registry.json"
+  version_file: "VERSION"
+  changelog: "CHANGELOG.md"

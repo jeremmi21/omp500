@@ -1,0 +1,10 @@
+name: hyperframes-cli
+description: "Use the HyperFrames CLI development loop: init, add, catalog, capture, lint, check, snapshot, compare, grade-compare, preview, play, present, beats, keyframes, single or batch render, publish, cloud, cloudrun, feedback, "
+category: hyperframes/media
+triggers: ["hyperframes-cli"]
+inputs: ["brief or URL"]
+outputs: ["HyperFrames video"]
+dependencies: []
+model: inherit
+prompt_file: skills/hyperframes-cli/prompt.md
+version: 1.0.0

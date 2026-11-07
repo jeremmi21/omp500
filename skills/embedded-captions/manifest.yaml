@@ -1,0 +1,10 @@
+name: embedded-captions
+description: "embedded-captions — source heygen-com/hyperframes/skills/embedded-captions/SKILL.md"
+category: hyperframes/media
+triggers: ["embedded-captions"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/embedded-captions/prompt.md
+version: 1.0.0

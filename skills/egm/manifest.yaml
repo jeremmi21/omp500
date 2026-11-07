@@ -1,0 +1,10 @@
+name: egm
+description: "Elephant-Goldfish Model (EGM) design workflow for AI agents: brainstorm a feature into a concept brief, draft a design spec with full project context (elephant), then stress-test it with fresh zero-context reviewer subag"
+category: egm
+triggers: ["egm", "EGM", "design"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/egm/prompt.md
+version: 1.0.0

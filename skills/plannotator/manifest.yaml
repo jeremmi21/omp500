@@ -1,0 +1,10 @@
+name: plannotator
+description: "Reference for using Plannotator (its `plannotator` tool when you have one, otherwise the CLI): plan review, code review, annotating files, URLs, folders, and running local apps, annotating the last assistant message, bro"
+category: review
+triggers: ["plannotator"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/plannotator/prompt.md
+version: 1.0.0

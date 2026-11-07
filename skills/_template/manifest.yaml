@@ -1,0 +1,10 @@
+name: my-new-skill
+description: "One-line purpose of this skill"
+category: general
+triggers: ["my-new-skill"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/my-new-skill/prompt.md
+version: 1.0.0

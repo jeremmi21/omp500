@@ -1,0 +1,10 @@
+name: egm-resolve
+description: "EGM Resolve: work through Goldfish review findings on a design document with the human, agree on which to accept, and apply the accepted changes. Use after an egm review produced findings."
+category: egm
+triggers: ["egm-resolve", "EGM", "design"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/egm-resolve/prompt.md
+version: 1.0.0

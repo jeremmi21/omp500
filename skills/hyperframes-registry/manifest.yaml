@@ -1,0 +1,10 @@
+name: hyperframes-registry
+description: "Install, discover, and wire registry blocks and components into HyperFrames compositions. Use when running hyperframes add or hyperframes catalog, installing one item or every block matching a tag, wiring an installed it"
+category: hyperframes/media
+triggers: ["hyperframes-registry"]
+inputs: ["brief or URL"]
+outputs: ["HyperFrames video"]
+dependencies: []
+model: inherit
+prompt_file: skills/hyperframes-registry/prompt.md
+version: 1.0.0

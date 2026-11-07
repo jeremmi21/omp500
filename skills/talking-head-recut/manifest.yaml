@@ -1,0 +1,10 @@
+name: talking-head-recut
+description: "talking-head-recut — source heygen-com/hyperframes/skills/talking-head-recut/SKILL.md"
+category: hyperframes/media
+triggers: ["talking-head-recut"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/talking-head-recut/prompt.md
+version: 1.0.0

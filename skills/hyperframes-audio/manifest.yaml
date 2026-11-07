@@ -1,0 +1,10 @@
+name: hyperframes-audio
+description: "Use when audio already placed in a HyperFrames composition needs to be mixed: fade-in/fade-out, crossfade, track gain or volume, volume automation, ducking, a music bed that fights a voiceover (voiceover carve), effects "
+category: hyperframes/media
+triggers: ["hyperframes-audio"]
+inputs: ["brief or URL"]
+outputs: ["HyperFrames video"]
+dependencies: []
+model: inherit
+prompt_file: skills/hyperframes-audio/prompt.md
+version: 1.0.0

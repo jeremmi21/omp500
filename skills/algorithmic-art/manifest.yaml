@@ -1,0 +1,10 @@
+name: algorithmic-art
+description: "algorithmic-art — source anthropics/skills/skills/algorithmic-art/SKILL.md"
+category: hyperframes/media
+triggers: ["algorithmic-art"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/algorithmic-art/prompt.md
+version: 1.0.0

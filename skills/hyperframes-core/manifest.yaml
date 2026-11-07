@@ -1,0 +1,10 @@
+name: hyperframes-core
+description: "The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class='clip'`, tracks, sub-compositions, variables, framework-owned media playback, det"
+category: hyperframes/media
+triggers: ["hyperframes-core"]
+inputs: ["brief or URL"]
+outputs: ["HyperFrames video"]
+dependencies: []
+model: inherit
+prompt_file: skills/hyperframes-core/prompt.md
+version: 1.0.0

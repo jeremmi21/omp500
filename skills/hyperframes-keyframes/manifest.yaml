@@ -1,0 +1,10 @@
+name: hyperframes-keyframes
+description: "Use when a HyperFrames composition needs a punch-in, punch-out, zoom, reframe, Ken Burns treatment, camera move, visual match/whip handoff, or other seek-safe 2D/3D keyframes; also for GSAP, CSS keyframes, Anime.js, WAAP"
+category: hyperframes/media
+triggers: ["hyperframes-keyframes"]
+inputs: ["brief or URL"]
+outputs: ["HyperFrames video"]
+dependencies: []
+model: inherit
+prompt_file: skills/hyperframes-keyframes/prompt.md
+version: 1.0.0

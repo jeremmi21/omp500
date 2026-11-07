@@ -1,0 +1,10 @@
+name: remotion-to-hyperframes
+description: "remotion-to-hyperframes — source heygen-com/hyperframes/skills/remotion-to-hyperframes/SKILL.md"
+category: hyperframes/media
+triggers: ["remotion-to-hyperframes"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/remotion-to-hyperframes/prompt.md
+version: 1.0.0

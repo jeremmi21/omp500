@@ -1,0 +1,10 @@
+name: changelog-video
+description: "changelog-video — source heygen-com/hyperframes/.claude/skills/changelog-video/SKILL.md"
+category: hyperframes/media
+triggers: ["changelog-video"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/changelog-video/prompt.md
+version: 1.0.0

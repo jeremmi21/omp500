@@ -1,0 +1,10 @@
+name: hyperframes-animation
+description: "All animation knowledge for HyperFrames — atomic motion rules, multi-phase scene blueprints, scene transitions, broader motion-design techniques, AND the seven runtime adapters (GSAP default, plus Lottie, Three.js, Anime"
+category: hyperframes/media
+triggers: ["hyperframes-animation"]
+inputs: ["brief or URL"]
+outputs: ["HyperFrames video"]
+dependencies: []
+model: inherit
+prompt_file: skills/hyperframes-animation/prompt.md
+version: 1.0.0

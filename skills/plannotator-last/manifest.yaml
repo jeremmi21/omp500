@@ -1,0 +1,10 @@
+name: plannotator-last
+description: "Open Plannotator on the latest rendered assistant message and use the returned annotations to revise that message or continue."
+category: review
+triggers: ["plannotator-last"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/plannotator-last/prompt.md
+version: 1.0.0

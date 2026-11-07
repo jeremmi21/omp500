@@ -1,0 +1,10 @@
+name: seam-craft
+description: "seam-craft — source heygen-com/hyperframes/.claude/skills/seam-craft/SKILL.md"
+category: hyperframes/media
+triggers: ["seam-craft"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/seam-craft/prompt.md
+version: 1.0.0

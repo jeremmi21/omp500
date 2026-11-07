@@ -1,0 +1,10 @@
+name: anatomy
+description: "Build crafted, highly detailed, interactive isometric SVG figures that explain a technical idea as a real physical object (a test rig, a dial gauge, a cabinet of drawers, a plotter, a lock), with many small precise solid"
+category: visual
+triggers: ["anatomy", "isometric", "diagram", "figure"]
+inputs: ["concept"]
+outputs: ["isometric SVG"]
+dependencies: []
+model: inherit
+prompt_file: skills/anatomy/prompt.md
+version: 1.0.0

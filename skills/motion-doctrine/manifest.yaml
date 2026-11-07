@@ -1,0 +1,10 @@
+name: motion-doctrine
+description: "motion-doctrine — source heygen-com/hyperframes/.claude/skills/motion-doctrine/SKILL.md"
+category: hyperframes/media
+triggers: ["motion-doctrine"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/motion-doctrine/prompt.md
+version: 1.0.0

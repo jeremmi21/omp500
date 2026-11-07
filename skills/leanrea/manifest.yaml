@@ -1,0 +1,10 @@
+name: leanrea
+description: "leanrea — source aicodeking/leanrea/leanrea/SKILL.md"
+category: dev-tool
+triggers: ["leanrea"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/leanrea/prompt.md
+version: 1.0.0

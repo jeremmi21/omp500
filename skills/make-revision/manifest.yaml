@@ -1,0 +1,10 @@
+name: make-revision
+description: "Use when turning a subject, declared syllabus, notes, transcripts, Markdown, or PDFs into a reliable one-hour revision experience with Feynman teaching, active recall, exam practice, model answers, source traceability, M"
+category: writing
+triggers: ["make-revision"]
+inputs: ["syllabus/notes/transcript"]
+outputs: ["revision.md + PDF"]
+dependencies: []
+model: inherit
+prompt_file: skills/make-revision/prompt.md
+version: 1.0.0

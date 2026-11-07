@@ -1,0 +1,15 @@
+**Title: The Data Whisperer**
+
+Mira found the USB stick in a crack between the floorboards. Plugging it in, she found a single file named `message.json`. Her heart raced as she opened it:
+
+#"
+```json
+{
+  "from": "Unknown",
+  "to": "Mira",
+  "message": "The key is hidden in the lantern. Trust no one. \u2728"
+}
+```
+"#
+
+The lantern flickered in the corner of the room. She stood, whispering, "Game on."

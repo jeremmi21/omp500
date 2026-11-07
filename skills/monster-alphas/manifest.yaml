@@ -1,0 +1,10 @@
+name: monster-alphas
+description: "Use when starting or resuming an alpha generation session on the local WorldQuant BRAIN harness: read the quota and the queue, pick a signal family, preview templates free, queue one-point tasks, read the verdicts, and u"
+category: quant
+triggers: ["monster-alphas"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/monster-alphas/prompt.md
+version: 1.0.0

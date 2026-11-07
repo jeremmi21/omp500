@@ -1,0 +1,10 @@
+name: music-to-video
+description: "music-to-video — source heygen-com/hyperframes/skills/music-to-video/SKILL.md"
+category: hyperframes/media
+triggers: ["music-to-video"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/music-to-video/prompt.md
+version: 1.0.0

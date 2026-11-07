@@ -1,0 +1,10 @@
+name: figma
+description: "figma — source heygen-com/hyperframes/skills/figma/SKILL.md"
+category: hyperframes/media
+triggers: ["figma"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/figma/prompt.md
+version: 1.0.0

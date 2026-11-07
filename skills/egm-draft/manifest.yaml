@@ -1,0 +1,10 @@
+name: egm-draft
+description: "EGM Draft: turn a concept brief or notes into a formal design document (design_draft.md, section by section, pausing for feedback). Use when a design spec needs writing before implementation."
+category: egm
+triggers: ["egm-draft", "EGM", "design"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/egm-draft/prompt.md
+version: 1.0.0

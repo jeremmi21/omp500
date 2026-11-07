@@ -1,0 +1,10 @@
+name: egm-review
+description: "EGM Review: five-phase Goldfish review (zoom out, comprehension, design critique, intermediate zoom out, implementation readiness) of a design document with fresh zero-context reviewer subagents. Use when a draft or spec"
+category: egm
+triggers: ["egm-review", "EGM", "design"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/egm-review/prompt.md
+version: 1.0.0

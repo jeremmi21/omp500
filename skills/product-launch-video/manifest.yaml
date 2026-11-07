@@ -1,0 +1,10 @@
+name: product-launch-video
+description: "product-launch-video — source heygen-com/hyperframes/skills/product-launch-video/SKILL.md"
+category: hyperframes/media
+triggers: ["product-launch-video"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/product-launch-video/prompt.md
+version: 1.0.0

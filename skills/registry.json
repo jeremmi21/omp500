@@ -1,0 +1,927 @@
+[
+  {
+    "name": "algorithmic-art",
+    "description": "algorithmic-art — source anthropics/skills/skills/algorithmic-art/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "algorithmic-art"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/algorithmic-art/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:anthropics/skills"
+  },
+  {
+    "name": "anatomy",
+    "description": "Build crafted, highly detailed, interactive isometric SVG figures that explain a technical idea as a real physical object (a test rig, a dial gauge, a cabinet of drawers, a plotter, a lock), with many small precise solid",
+    "category": "visual",
+    "triggers": [
+      "anatomy",
+      "isometric",
+      "diagram",
+      "figure"
+    ],
+    "inputs": [
+      "concept"
+    ],
+    "outputs": [
+      "isometric SVG"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/anatomy/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "captions-overlay",
+    "description": "captions-overlay — source heygen-com/hyperframes/.claude/skills/captions-overlay/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "captions-overlay"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/captions-overlay/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "changelog-video",
+    "description": "changelog-video — source heygen-com/hyperframes/.claude/skills/changelog-video/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "changelog-video"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/changelog-video/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "codebase-design",
+    "description": "codebase-design — source mattpocock/skills/skills/engineering/codebase-design/SKILL.md",
+    "category": "dev-tool",
+    "triggers": [
+      "codebase-design"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/codebase-design/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:mattpocock/skills"
+  },
+  {
+    "name": "cut-the-curve",
+    "description": "cut-the-curve — source heygen-com/hyperframes/.claude/skills/cut-the-curve/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "cut-the-curve"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/cut-the-curve/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "egm",
+    "description": "Elephant-Goldfish Model (EGM) design workflow for AI agents: brainstorm a feature into a concept brief, draft a design spec with full project context (elephant), then stress-test it with fresh zero-context reviewer subag",
+    "category": "egm",
+    "triggers": [
+      "egm",
+      "EGM",
+      "design"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/egm/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "egm-brainstorm",
+    "description": "EGM Brainstorm: turn a half-baked feature idea into concepts_brief.md through open-ended clarifying questions and a 6-lens Goldfish review swarm. Use when asked to brainstorm, stress-test, or scope a concept before writi",
+    "category": "egm",
+    "triggers": [
+      "egm-brainstorm",
+      "EGM",
+      "design"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/egm-brainstorm/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "egm-draft",
+    "description": "EGM Draft: turn a concept brief or notes into a formal design document (design_draft.md, section by section, pausing for feedback). Use when a design spec needs writing before implementation.",
+    "category": "egm",
+    "triggers": [
+      "egm-draft",
+      "EGM",
+      "design"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/egm-draft/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "egm-resolve",
+    "description": "EGM Resolve: work through Goldfish review findings on a design document with the human, agree on which to accept, and apply the accepted changes. Use after an egm review produced findings.",
+    "category": "egm",
+    "triggers": [
+      "egm-resolve",
+      "EGM",
+      "design"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/egm-resolve/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "egm-review",
+    "description": "EGM Review: five-phase Goldfish review (zoom out, comprehension, design critique, intermediate zoom out, implementation readiness) of a design document with fresh zero-context reviewer subagents. Use when a draft or spec",
+    "category": "egm",
+    "triggers": [
+      "egm-review",
+      "EGM",
+      "design"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/egm-review/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "embedded-captions",
+    "description": "embedded-captions — source heygen-com/hyperframes/skills/embedded-captions/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "embedded-captions"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/embedded-captions/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "faceless-explainer",
+    "description": "faceless-explainer — source heygen-com/hyperframes/skills/faceless-explainer/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "faceless-explainer"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/faceless-explainer/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "figma",
+    "description": "figma — source heygen-com/hyperframes/skills/figma/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "figma"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/figma/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "find-skills",
+    "description": "find-skills — source vercel-labs/skills/skills/find-skills/SKILL.md",
+    "category": "dev-tool",
+    "triggers": [
+      "find-skills"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/find-skills/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:vercel-labs/skills"
+  },
+  {
+    "name": "general-video",
+    "description": "general-video — source heygen-com/hyperframes/skills/general-video/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "general-video"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/general-video/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "gsap-timeline",
+    "description": "gsap-timeline — source greensock/gsap-skills/skills/gsap-timeline/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "gsap-timeline"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/gsap-timeline/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:greensock/gsap-skills"
+  },
+  {
+    "name": "hyperframes",
+    "description": "Mandatory entry point: read this first for any request to make, create, edit, animate, or render a video, animation, or motion graphic, including a promo, explainer, captioned clip, title card, overlay, slideshow or inte",
+    "category": "hyperframes/media",
+    "triggers": [
+      "hyperframes"
+    ],
+    "inputs": [
+      "brief or URL"
+    ],
+    "outputs": [
+      "HyperFrames video"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/hyperframes/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "hyperframes-animation",
+    "description": "All animation knowledge for HyperFrames — atomic motion rules, multi-phase scene blueprints, scene transitions, broader motion-design techniques, AND the seven runtime adapters (GSAP default, plus Lottie, Three.js, Anime",
+    "category": "hyperframes/media",
+    "triggers": [
+      "hyperframes-animation"
+    ],
+    "inputs": [
+      "brief or URL"
+    ],
+    "outputs": [
+      "HyperFrames video"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/hyperframes-animation/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "hyperframes-audio",
+    "description": "Use when audio already placed in a HyperFrames composition needs to be mixed: fade-in/fade-out, crossfade, track gain or volume, volume automation, ducking, a music bed that fights a voiceover (voiceover carve), effects ",
+    "category": "hyperframes/media",
+    "triggers": [
+      "hyperframes-audio"
+    ],
+    "inputs": [
+      "brief or URL"
+    ],
+    "outputs": [
+      "HyperFrames video"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/hyperframes-audio/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "hyperframes-cli",
+    "description": "Use the HyperFrames CLI development loop: init, add, catalog, capture, lint, check, snapshot, compare, grade-compare, preview, play, present, beats, keyframes, single or batch render, publish, cloud, cloudrun, feedback, ",
+    "category": "hyperframes/media",
+    "triggers": [
+      "hyperframes-cli"
+    ],
+    "inputs": [
+      "brief or URL"
+    ],
+    "outputs": [
+      "HyperFrames video"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/hyperframes-cli/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "hyperframes-core",
+    "description": "The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class='clip'`, tracks, sub-compositions, variables, framework-owned media playback, det",
+    "category": "hyperframes/media",
+    "triggers": [
+      "hyperframes-core"
+    ],
+    "inputs": [
+      "brief or URL"
+    ],
+    "outputs": [
+      "HyperFrames video"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/hyperframes-core/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "hyperframes-creative",
+    "description": "Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / styl",
+    "category": "hyperframes/media",
+    "triggers": [
+      "hyperframes-creative"
+    ],
+    "inputs": [
+      "brief or URL"
+    ],
+    "outputs": [
+      "HyperFrames video"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/hyperframes-creative/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "hyperframes-keyframes",
+    "description": "Use when a HyperFrames composition needs a punch-in, punch-out, zoom, reframe, Ken Burns treatment, camera move, visual match/whip handoff, or other seek-safe 2D/3D keyframes; also for GSAP, CSS keyframes, Anime.js, WAAP",
+    "category": "hyperframes/media",
+    "triggers": [
+      "hyperframes-keyframes"
+    ],
+    "inputs": [
+      "brief or URL"
+    ],
+    "outputs": [
+      "HyperFrames video"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/hyperframes-keyframes/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "hyperframes-registry",
+    "description": "Install, discover, and wire registry blocks and components into HyperFrames compositions. Use when running hyperframes add or hyperframes catalog, installing one item or every block matching a tag, wiring an installed it",
+    "category": "hyperframes/media",
+    "triggers": [
+      "hyperframes-registry"
+    ],
+    "inputs": [
+      "brief or URL"
+    ],
+    "outputs": [
+      "HyperFrames video"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/hyperframes-registry/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "leanrea",
+    "description": "leanrea — source aicodeking/leanrea/leanrea/SKILL.md",
+    "category": "dev-tool",
+    "triggers": [
+      "leanrea"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/leanrea/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:aicodeking/leanrea"
+  },
+  {
+    "name": "make-revision",
+    "description": "Use when turning a subject, declared syllabus, notes, transcripts, Markdown, or PDFs into a reliable one-hour revision experience with Feynman teaching, active recall, exam practice, model answers, source traceability, M",
+    "category": "writing",
+    "triggers": [
+      "make-revision"
+    ],
+    "inputs": [
+      "syllabus/notes/transcript"
+    ],
+    "outputs": [
+      "revision.md + PDF"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/make-revision/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "makeuicute",
+    "description": "Make a local web UI show up properly, then make it effortless to get back to. A browser refuses cross-origin font, stylesheet and ES module loads over file://, so a UI opened by double-clicking its .html renders with the",
+    "category": "ui",
+    "triggers": [
+      "makeuicute"
+    ],
+    "inputs": [
+      "local UI path"
+    ],
+    "outputs": [
+      "served UI + serve.bat"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/makeuicute/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "media-use",
+    "description": "Agent Media OS, the single skill for every media need in a HyperFrames project. Resolve BGM, SFX, image, icon, brand logo, voice, color grade, or LUT into a frozen local file or paste-ready block + ledger record (one ver",
+    "category": "hyperframes/media",
+    "triggers": [
+      "media-use"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/media-use/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "monster-alphas",
+    "description": "Use when starting or resuming an alpha generation session on the local WorldQuant BRAIN harness: read the quota and the queue, pick a signal family, preview templates free, queue one-point tasks, read the verdicts, and u",
+    "category": "quant",
+    "triggers": [
+      "monster-alphas"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/monster-alphas/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "motion-doctrine",
+    "description": "motion-doctrine — source heygen-com/hyperframes/.claude/skills/motion-doctrine/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "motion-doctrine"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/motion-doctrine/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "motion-graphics",
+    "description": "A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit, logo sting / brand lockup, lower-third / callout / social overlay, animated map (highlight regions, ",
+    "category": "hyperframes/media",
+    "triggers": [
+      "motion-graphics"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/motion-graphics/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "music-to-video",
+    "description": "music-to-video — source heygen-com/hyperframes/skills/music-to-video/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "music-to-video"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/music-to-video/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "oversized-cursor",
+    "description": "oversized-cursor — source heygen-com/hyperframes/.claude/skills/oversized-cursor/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "oversized-cursor"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/oversized-cursor/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "plannotator",
+    "description": "Reference for using Plannotator (its `plannotator` tool when you have one, otherwise the CLI): plan review, code review, annotating files, URLs, folders, and running local apps, annotating the last assistant message, bro",
+    "category": "review",
+    "triggers": [
+      "plannotator"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/plannotator/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "plannotator-annotate",
+    "description": "Open Plannotator's annotation UI for a markdown file, plain-text config file (.yaml, .json, .toml, .ini, .csv, .log, …), HTML file, URL, or folder and then respond to the returned annotations.",
+    "category": "review",
+    "triggers": [
+      "plannotator-annotate"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/plannotator-annotate/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "plannotator-last",
+    "description": "Open Plannotator on the latest rendered assistant message and use the returned annotations to revise that message or continue.",
+    "category": "review",
+    "triggers": [
+      "plannotator-last"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/plannotator-last/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "plannotator-review",
+    "description": "Open Plannotator's browser-based code review UI for the current worktree, another directory, or a pull request URL, then act on the feedback that comes back.",
+    "category": "review",
+    "triggers": [
+      "plannotator-review"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/plannotator-review/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "pr-to-video",
+    "description": "pr-to-video — source heygen-com/hyperframes/skills/pr-to-video/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "pr-to-video"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/pr-to-video/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "product-launch-video",
+    "description": "product-launch-video — source heygen-com/hyperframes/skills/product-launch-video/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "product-launch-video"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/product-launch-video/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "prototype",
+    "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+    "category": "dev-tool",
+    "triggers": [
+      "prototype"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/prototype/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "remotion-to-hyperframes",
+    "description": "remotion-to-hyperframes — source heygen-com/hyperframes/skills/remotion-to-hyperframes/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "remotion-to-hyperframes"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/remotion-to-hyperframes/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "seam-craft",
+    "description": "seam-craft — source heygen-com/hyperframes/.claude/skills/seam-craft/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "seam-craft"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/seam-craft/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "slideshow",
+    "description": "slideshow — source heygen-com/hyperframes/skills/slideshow/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "slideshow"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/slideshow/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "software-factory",
+    "description": "The faq skill (package: software-factory). Run a gated, resumable assembly line that turns an idea into shipped software. Stages — intake, spike, mvp, spec, plan, scaffold, build, verify, ship, operate — each with a froz",
+    "category": "dev-tool",
+    "triggers": [
+      "software-factory"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/software-factory/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "talking-head-recut",
+    "description": "talking-head-recut — source heygen-com/hyperframes/skills/talking-head-recut/SKILL.md",
+    "category": "hyperframes/media",
+    "triggers": [
+      "talking-head-recut"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/talking-head-recut/prompt.md",
+    "version": "1.0.0",
+    "source": "locked:heygen-com/hyperframes"
+  },
+  {
+    "name": "ui-demo",
+    "description": "Record polished UI demo videos using Playwright. Use when the user asks to create a demo, walkthrough, screen recording, or tutorial video of a web application. Produces WebM videos with visible cursor, natural pacing, a",
+    "category": "dev-tool",
+    "triggers": [
+      "ui-demo"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/ui-demo/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  },
+  {
+    "name": "wq-alpha-research",
+    "description": "Use for WorldQuant BRAIN alpha research: designing WQ Alpha expressions, selecting fields/operators, diagnosing simulation and IS check failures, tuning Sharpe/Fitness/Turnover, submitting alphas, and building low-correl",
+    "category": "quant",
+    "triggers": [
+      "wq-alpha-research"
+    ],
+    "inputs": [
+      "prompt"
+    ],
+    "outputs": [
+      "result"
+    ],
+    "dependencies": [],
+    "model": "inherit",
+    "prompt_file": "skills/wq-alpha-research/prompt.md",
+    "version": "1.0.0",
+    "source": "installed"
+  }
+]

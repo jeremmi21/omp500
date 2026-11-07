@@ -1,0 +1,10 @@
+name: codebase-design
+description: "codebase-design — source mattpocock/skills/skills/engineering/codebase-design/SKILL.md"
+category: dev-tool
+triggers: ["codebase-design"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/codebase-design/prompt.md
+version: 1.0.0

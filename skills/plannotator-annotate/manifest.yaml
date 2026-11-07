@@ -1,0 +1,10 @@
+name: plannotator-annotate
+description: "Open Plannotator's annotation UI for a markdown file, plain-text config file (.yaml, .json, .toml, .ini, .csv, .log, …), HTML file, URL, or folder and then respond to the returned annotations."
+category: review
+triggers: ["plannotator-annotate"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/plannotator-annotate/prompt.md
+version: 1.0.0

@@ -1,0 +1,10 @@
+name: software-factory
+description: "The faq skill (package: software-factory). Run a gated, resumable assembly line that turns an idea into shipped software. Stages — intake, spike, mvp, spec, plan, scaffold, build, verify, ship, operate — each with a froz"
+category: dev-tool
+triggers: ["software-factory"]
+inputs: ["prompt"]
+outputs: ["result"]
+dependencies: []
+model: inherit
+prompt_file: skills/software-factory/prompt.md
+version: 1.0.0
