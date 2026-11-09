@@ -32,6 +32,12 @@ if [[ -f "settings/secrets.example.env" ]]; then
 else warn "settings/secrets.example.env missing"; fi
 if [[ -f ".env" ]] && grep -Eq "OPENAI_API_KEY=.+[^placeholder]" .env 2>/dev/null; then warn ".env present (not committed) — ok"; fi
 
+# 2b) no real key anywhere in a tracked file (a key belongs in .env, which is gitignored)
+if git rev-parse --git-dir >/dev/null 2>&1; then
+  LEAKED="$(git grep -lEI '(sk-[A-Za-z0-9_-]{20,}|gh[pousr]_[A-Za-z0-9]{20,}|oc_sk_[A-Za-z0-9]{20,})' -- . ':!*.lock' 2>/dev/null | head -5)"
+  if [[ -n "$LEAKED" ]]; then fail "real key in tracked file(s): $(echo "$LEAKED" | tr '\n' ' ')"; else pass "no real keys in tracked files"; fi
+else warn "not a git checkout — skipped the tracked-file key scan"; fi
+
 # 3) registry + expected count + per-skill folders
 "$NODE_BIN" <<'NODE'
 const fs=require('fs'), path=require('path');

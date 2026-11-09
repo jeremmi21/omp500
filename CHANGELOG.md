@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Docs: `INSTALL.md` §2b — adding an OpenCode API key by hand, for both omp (`omp auth import`,
+  `OPENCODE_API_KEY`) and the OpenCode CLI (`auth.json`). Placeholders only; no key material.
+- Secrets template: `OPENCODE_API_KEY` listed as a commented placeholder.
+- `verify.sh`: new check — fails when a real key appears in any tracked file, not just in the
+  secrets template.
+
 ## 500.1.0 — 2026-11-07
 
 - Initial OMP500 build: 48 skills from `~/.agents/skills` (27) + `skills-lock.json` (32), deduped union.

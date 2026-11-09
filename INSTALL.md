@@ -31,6 +31,71 @@ cp settings/secrets.example.env .env
 
 The repo never contains real keys. `settings/secrets.example.env` lists every key the setup needs as `KEY=placeholder`. `.env` is gitignored. If you skip this, `install.sh` will create `.env` from the template and prompt you.
 
+## 2b) Adding an OpenCode API key by hand
+
+Two programs on a device can use an OpenCode key and they read it from **different places**.
+Neither needs the OpenCode console. Provider id: `opencode-go`.
+
+| Program | Where the key lives | Hand-editable |
+|---|---|---|
+| omp | `~/.omp/agent/agent.db` → table `auth_credentials` | **no** — SQLite (WAL); write via `omp auth import` |
+| OpenCode CLI | `~/.local/share/opencode/auth.json` | yes — plain JSON |
+
+### omp, persistent
+
+Write a file — say `creds.json` — then import it and delete it:
+
+```json
+{
+  "version": 1,
+  "credentials": [
+    {
+      "provider": "opencode-go",
+      "credential": { "type": "api_key", "key": "sk-..." }
+    }
+  ]
+}
+```
+
+```bash
+omp auth import creds.json   # Imported 1 credential(s) for opencode-go.
+rm creds.json                # it held a live secret
+```
+
+Import **merges**: existing keys stay. If an older `opencode-go` entry is already stored, it can
+win round-robin and the new key appears unused. Check with `omp auth export` before adding.
+
+### omp, one process
+
+```bash
+OPENCODE_API_KEY=sk-... omp
+```
+
+Nothing is stored. `omp --api-key=sk-...` does the same for a single invocation.
+
+### OpenCode CLI
+
+Edit `~/.local/share/opencode/auth.json` and set the `opencode-go` entry:
+
+```json
+{ "opencode-go": { "type": "api", "key": "sk-..." } }
+```
+
+**The two stores spell the type differently** — `api_key` in omp's import JSON, `api` in
+`auth.json`. Swapping them is the usual cause of a key that "does nothing".
+
+### Verify
+
+```bash
+omp token opencode-go          # the key omp will actually use
+omp auth export                # whole credential store, as JSON
+omp models | grep opencode-go  # provider listed, with its model count
+```
+
+Never write a real key into a tracked file. `verify.sh` fails the build if one appears anywhere
+in the repo; `.env` is the only place a key belongs, and it is gitignored.
+
+
 ## 3) Install
 
 ```bash
