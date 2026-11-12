@@ -178,6 +178,21 @@ git push && git push --tags
 
 Other devices pick it up on next `update.sh`.
 
+## 8) Browser relay extension (Brave / Chrome)
+
+The `omp` agent drives your real tabs through a local CDP relay plus an unpacked MV3 extension. The
+extension is vendored in this repo at `browser-relay/extension/` (pinned to omp `18.19.0`); full
+procedure and troubleshooting in `browser-relay/README.md`.
+
+```bash
+omp config set browser.relay true          # relay runs as a daemon on 127.0.0.1:9224
+omp browser-relay install                  # or use this repo: browser-relay/extension
+```
+
+Then `brave://extensions` → Developer mode → **Load unpacked** → `omp500/browser-relay/extension`.
+Verify: `netstat -ano | findstr 9224` shows `LISTENING` + an `ESTABLISHED` loopback connection, and the
+relay log at `~/.omp/run/daemons/global/browser-relay/.../output.log` says `Extension connected.`
+
 ## Troubleshooting
 
 | symptom | fix |
@@ -188,5 +203,6 @@ Other devices pick it up on next `update.sh`.
 | `FAIL VERSION mismatch` | `VERSION` file and git tag must agree: `git tag v$(cat VERSION)` |
 | `FAIL secrets: real key found` | You committed a real key — `git restore` the file, rotate the key, re-check |
 | `git pull --ff-only` refuses | You have local edits: `git stash` → `bash scripts/update.sh` → `git stash pop` |
+| relay log: `Waiting for the OMP Browser Relay extension to connect` | extension not loaded / disabled / wrong port — see `browser-relay/README.md` |
 
 Questions: open an issue or run `bash scripts/verify.sh` and paste the output.

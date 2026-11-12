@@ -27,6 +27,7 @@ omp500/
 ├── skills/_template/           ← copy this to add a skill
 ├── baml/                       ← pipeline.baml, types.baml, clients.baml
 ├── settings/                   ← config.yaml + secrets.example.env (placeholders only)
+├── browser-relay/extension/    ← OMP Browser Relay, unpacked MV3 (see browser-relay/README.md)
 ├── scripts/                    ← install.sh / update.sh / verify.sh (idempotent)
 └── VERSION                     ← 500.1.0 + git tag v500.1.0
 ```
