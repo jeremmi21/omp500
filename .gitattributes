@@ -1,2 +1,4 @@
 # vendored extension: keep bytes exact so manifest/hash matches the omp artifact
 browser-relay/extension/** -text
+# shell scripts must keep LF on Windows checkouts (core.autocrlf=true breaks them)
+*.sh text eol=lf

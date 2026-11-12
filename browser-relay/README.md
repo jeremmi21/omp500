@@ -1,16 +1,19 @@
 # browser-relay — OMP Browser Relay (vendored)
 
-**Structure.** `browser-relay/extension/` is a verbatim copy of the extension the `omp` CLI writes to
+**Structure.** `browser-relay/extension/` is a copy of the extension the `omp` CLI writes to
 `~/.omp/browser-relay/extension`. It is loaded into Brave/Chrome as an *unpacked* extension, connects
 to a local relay over `ws://127.0.0.1:<port>/ext`, and gives the omp agent CDP control of your own tabs.
 
 **Constraints.** Manifest V3. The extension is first-party code shipped inside `omp` (MIT, © Mario
 Zechner / Can Bölük / Stencil Labs, Inc.) — do not edit `background.js`, it is bundled output. Never put a
-relay `--token` in this repo. `THIRD-PARTY-NOTICES.txt` is the release-wide aggregate that ships with
-`omp`; it is kept here only so the copy stays byte-identical to the artifact.
+relay `--token` in this repo. Lines here are LF and `.gitattributes` pins them (`-text`); the Windows CLI
+writes the same files with CRLF, so compare with line endings normalised, not byte-for-byte.
+`THIRD-PARTY-NOTICES.txt` is the release-wide aggregate that ships with `omp`; the CLI's `install` does
+not write it, it is kept here as the licence record for the vendored artifact.
 
-**Success.** `brave://extensions` lists **OMP Browser Relay 18.19.0** as enabled, the relay log says
-`Extension connected.`, and `netstat` shows an `ESTABLISHED` loopback connection to the relay port.
+**Success.** `brave://extensions` lists **OMP Browser Relay 18.19.0** as enabled with the badge `on`, the
+relay log says `Extension connected.`, and `netstat` shows an `ESTABLISHED` loopback connection to the
+relay port.
 
 Pinned to omp `18.19.0` (`manifest.json` → `version_name`). `version_name` MUST equal the installed
 `omp` version — the relay protocol is versioned and silently refuses a skewed extension.
@@ -46,6 +49,9 @@ Or run it by hand for one session — background it, it blocks:
 ```bash
 omp browser-relay --port 9224 &    # add --token <secret> if you want auth
 ```
+
+`omp` starts the relay itself once the mode is enabled; run it by hand only when you need `--token`,
+`--no-group`, or a port other than 9224.
 
 ### 2. Load the extension
 
